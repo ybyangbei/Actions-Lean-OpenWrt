@@ -16,7 +16,7 @@ rm -rf feeds/luci/applications/luci-app-https-dns-proxy
 
 # lienol其它插件
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns feeds/packages/net/smartdns
+svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/lienol/smartdns
 svn co https://github.com/Lienol/openwrt-package/trunk/package/brook package/lienol/brook
 svn co https://github.com/Lienol/openwrt-package/trunk/package/chinadns-ng package/lienol/chinadns-ng
 svn co https://github.com/Lienol/openwrt-package/trunk/package/dns2socks package/lienol/dns2socks
