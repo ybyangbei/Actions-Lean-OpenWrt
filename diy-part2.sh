@@ -14,8 +14,10 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 # 删除luci-app-https-dns-proxy插件
 rm -rf feeds/luci/applications/luci-app-https-dns-proxy
 
-# lienol插件
+# smartdns插件核心
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/lienol/smartdns
+
+# lienol大的passwall插件及依赖
 svn co https://github.com/Lienol/openwrt-package/trunk/package/brook package/lienol/brook
 svn co https://github.com/Lienol/openwrt-package/trunk/package/chinadns-ng package/lienol/chinadns-ng
 svn co https://github.com/Lienol/openwrt-package/trunk/package/dns2socks package/lienol/dns2socks
