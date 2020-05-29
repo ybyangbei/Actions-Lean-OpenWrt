@@ -19,8 +19,9 @@ sed -i 's/^\(.*downloads.openwrt.org\)/#&/' package/lean/default-settings/files/
 sed -i 's/^\(.*http:\)/#&/' package/lean/default-settings/files/zzz-default-settings
 sed -i 's/^\(.*openwrt_luci\)/#&/' package/lean/default-settings/files/zzz-default-settings
 
-# 删除luci-app-https-dns-proxy插件
+# 删除lienol大luci缺失插件
 rm -rf feeds/luci/applications/luci-app-https-dns-proxy
+rm -rf feeds/telephony/net/freeswitch-stable
 
 # smartdns插件核心
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/lienol/smartdns
