@@ -23,7 +23,7 @@ sed -i 's/^\(.*openwrt_luci\)/#&/' package/lean/default-settings/files/zzz-defau
 rm -rf feeds/luci/applications/luci-app-https-dns-proxy
 rm -rf feeds/telephony/net/freeswitch-stable
 
-# smartdns插件核心
+# 补全lienol大luci的smartdns插件核心
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/lienol/smartdns
 
 # lienol大的passwall插件及依赖
