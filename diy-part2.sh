@@ -22,6 +22,7 @@ sed -i 's/^\(.*openwrt_luci\)/#&/' package/lean/default-settings/files/zzz-defau
 # 删除lienol大luci缺失插件
 rm -rf feeds/luci/applications/luci-app-https-dns-proxy
 rm -rf feeds/telephony/net/freeswitch-stable
+rm -rf feeds/telephony/freeswitch-stable-mod-bcg729
 
 # 补全lienol大luci的smartdns插件核心
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/lienol/smartdns
