@@ -16,7 +16,7 @@ sed -i 's/^\(.*99999\)/#&/' package/lean/default-settings/files/zzz-default-sett
 
 # 修正（注销）Lean大固件发行版软件源
 sed -i 's/^\(.*downloads.openwrt.org\)/#&/' package/lean/default-settings/files/zzz-default-settings
-sed -i 's/^\(.*http:)/#&/' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/^\(.*http)/#&/' package/lean/default-settings/files/zzz-default-settings
 sed -i 's/^\(.*openwrt_luci\)/#&/' package/lean/default-settings/files/zzz-default-settings
 
 # 删除luci-app-https-dns-proxy插件
