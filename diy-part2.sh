@@ -11,10 +11,10 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
 
-# 注销Lean大固件登陆密码
+# 取消Lean大固件登陆密码
 sed -i 's/^\(.*99999\)/#&/' package/lean/default-settings/files/zzz-default-settings
 
-# 修正（注销）Lean大固件发行版软件源
+# 修正（取消）Lean大固件原发行版软件源
 sed -i 's/^\(.*downloads.openwrt.org\)/#&/' package/lean/default-settings/files/zzz-default-settings
 sed -i 's/^\(.*http:\)/#&/' package/lean/default-settings/files/zzz-default-settings
 sed -i 's/^\(.*openwrt_luci\)/#&/' package/lean/default-settings/files/zzz-default-settings
