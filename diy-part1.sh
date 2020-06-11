@@ -9,12 +9,15 @@
 #=============================================================
 
 # Uncomment a feed source
+# 取消helloworld源注释（ssr-plus）
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# 取消telephony源注释
 sed -i 's/^#\(.*telephony\)/\1/' feeds.conf.default
 
 # comment a feed source
+# 注释掉原lean大luci源
 sed -i 's/^\(.*luci\)/#&/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+# 添加lienol大luci源
 sed -i '$a src-git luci https://github.com/Lienol/openwrt-luci.git;dev-18.06' feeds.conf.default
