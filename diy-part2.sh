@@ -20,7 +20,7 @@ sed -i 's/^\(.*http:\)/#&/' package/lean/default-settings/files/zzz-default-sett
 sed -i 's/^\(.*openwrt_luci\)/#&/' package/lean/default-settings/files/zzz-default-settings
 
 # 修改Lean大发行版软件源（snapshots改成releases/19.07-SNAPSHOT）
-sed -i 's#snapshots#releases/19.07-SNAPSHOT#g' package/lean/default-settings/files/zzz-default-settings
+#sed -i 's#snapshots#releases/19.07-SNAPSHOT#g' package/lean/default-settings/files/zzz-default-settings
 
 # 删除lienol大luci缺失插件
 rm -rf feeds/luci/applications/luci-app-https-dns-proxy
