@@ -11,7 +11,7 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
 
-# 取消Lean大固件登陆密码
+# 取消Lean大登陆密码
 sed -i 's/^\(.*99999\)/#&/' package/lean/default-settings/files/zzz-default-settings
 
 # 修正Lean大发行版软件源（注释掉原修改）
