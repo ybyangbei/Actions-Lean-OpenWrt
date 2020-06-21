@@ -10,7 +10,7 @@
 
 # Uncomment a feed source
 # 取消helloworld源注释（ssr-plus）
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # 取消telephony源注释
 sed -i 's/^#\(.*telephony\)/\1/' feeds.conf.default
 
