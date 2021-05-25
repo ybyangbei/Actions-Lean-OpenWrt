@@ -20,4 +20,4 @@ sed -i 's/^\(.*luci\)/#&/' feeds.conf.default
 
 # Add a feed source
 # 添加lienol大luci源
-sed -i '$a src-git luci https://github.com/Lienol/openwrt-luci.git;dev-18.06' feeds.conf.default
+#esed -i '$a src-git luci https://github.com/Lienol/openwrt-luci.git;dev-18.06' feeds.conf.default
